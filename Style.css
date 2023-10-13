@@ -305,7 +305,7 @@ letter-spacing: 0.10625rem;
    margin-right: 1rem;
     margin-top: 2rem;
     z-index: 4;
-    position: relative;
+    position: fixed;
   
    
 }
