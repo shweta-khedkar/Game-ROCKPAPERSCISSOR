@@ -118,6 +118,8 @@ function updateTimer() {
     let counter=document.querySelector(".pulsecontainer");
     counter.style.visibility="visible";
     counter.style.background="#f8f40c32";
+    let texthide=document.querySelector(".waitpc");
+  texthide.style.display="flex";
     pulsevisibilityoff();
     pulseoff();
     
@@ -212,11 +214,14 @@ function pulseon(){
   container.style.visibility="visible";
   pulse.style.visibility="visible";
   container.style.background="rgba(17, 174, 3, 0.45)";
+  let texthide=document.querySelector(".waitpc");
+  texthide.style.display="none";
   
 }
 
 function pulseoff(){
   let pulse=document.querySelector(".pulsecontainer>span");
-  
+  // let texthide=document.querySelector(".waitpc");
+  // texthide.style.display="none";
   pulse.style.visibility="hidden";
 }

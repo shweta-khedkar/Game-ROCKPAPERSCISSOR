@@ -6,6 +6,8 @@
 
 body{
     font-family: 'Barlow', sans-serif;
+    background:radial-gradient(134.34% 134.34% at 50% 0%,#8CC461 0%,#8CC461 100%);
+
 }
 
 .container{
@@ -14,7 +16,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    position: relative;
+    overflow: hidden;
     background:radial-gradient(134.34% 134.34% at 50% 0%,#8CC461 0%,#8CC461 100%);
 }
 
@@ -76,8 +79,8 @@ letter-spacing: 0.10625rem;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   margin-top: 3rem;
    background-position: center;
+   margin-top: 4rem;
 }
 .rock{
     margin-right: 4rem;
@@ -100,7 +103,7 @@ letter-spacing: 0.10625rem;
 }
 
 .handchoices img{
-    width: 13rem;
+    width: 12rem;
 }
 
 /* result page design */
@@ -143,6 +146,7 @@ letter-spacing: 0.10625rem;
     align-items: center;
     justify-content: center;
     justify-content: space-around;
+    margin-bottom: 3rem;
   
 }
 
@@ -212,6 +216,10 @@ letter-spacing: 0.10625rem;
     width: 100vw;
     height: 10rem;
     align-items: center;
+    height: auto;
+    z-index: 3;
+    position: absolute;
+    bottom: 2rem;
 }
 .nextbutton{
     cursor: pointer;
@@ -463,47 +471,24 @@ li {
 
 
 
-
-
 /*Mobile devices*/
 /* Styles for mobile devices */
 @media (max-width: 767px) {
+    .container{
+        overflow: visible;
+    }
     .scorebox{
     width: 80%;
-    border: 2px solid white;
-    border-radius: 1rem;
     height: fit-content;
-    justify-content: space-between;
-    margin-top: 4rem;
-    align-items: center;
-    padding: 2rem;
-    background: rgba(28, 48, 120, 0.00);
     flex-wrap: wrap;
-   align-content: center;
     }
     .titletext{
         font-size: 1rem;
-    font-weight: 600;
-    }
-
-    .scorebox{
-        display: flex;
-        width: 80%;
-        border: 2px solid white;
-        border-radius: 1rem;
-        height: 18%;
-        justify-content: space-between;
-        margin-top: 4rem;
-        align-items: center;
-        padding: 2rem;
-        flex-wrap: wrap;
-        background: rgba(28, 48, 120, 0.00);
     }
    
     .score .cscore,.uscore{
         width: 60%;
         height: 5rem;
-        background-color: #fff;
        
     }
     .score p{   
@@ -516,7 +501,6 @@ li {
 
     /* gamesection */
 .handchoices{
-   
    width: 30rem;
    height: 20rem;
   
@@ -524,5 +508,71 @@ li {
 .handchoices img{
     width: 9rem;
 }
+
+
+/* result page design */
+
+.resultbox{
+    flex-direction: column;
+    margin-top: 0%;
+    padding: 0%;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .resultbox h1{
+      font-size: 0.7625rem;
+  }
+  
+  .winresultbox
+  {
+      margin: 3%;
+  }
+  
+  .winresultbox h1{
+      font-size: 1em;
+      margin-bottom: 0%;
+  }
+  
+  .winresultbox p{
+      font-size: 0.7rem;
+  }
+  
+  .newgame{
+    margin-top: 2%;
+     font-size: 0.5375rem;
+  }
+  
+/* Adjust the height of the container */
+.pulsecontainer{
+    /* visibility: hidden; */
+    width: 125px;
+    height: 125px;
+}
+
+.pulsecontainer>img{
+    width: inherit;
+    height: inherit;
+}
+.pulsecontainer1{
+    width: 125px;
+    height: 125px;
+
+}
+.pulsecontainer1>img{
+    width: inherit;
+    height: inherit;
+}
+
+.waitpc>h3{
+    font-size: 0.5rem;
+}
+
+.rulebox{
+    justify-content: center; 
+}
+
+
 
 }
