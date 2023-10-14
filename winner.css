@@ -4,11 +4,12 @@
     height: 52vh;
     overflow: hidden;
     font-size: 91px;
-    color: var(--color-white);
+    background-image: url("assets/backgroundcup.svg");
     margin-top: 4rem;
- 
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: auto;
 }
-
 .stars{
     position: absolute;
     display: block;
@@ -18,16 +19,16 @@
     transform: translate(-50%, -50%);
 }
 .cup{
-    position: absolute;
-    height: fit-content;
-    width: 15.66%;
+
     top: 30.61%;
-    right: 40.83%;
-    bottom: 47.15%;
-    left: 43.52%;
-    max-width: 100%;
-    /* overflow: hidden; */
-    max-height: 100%;
+    /* right: 40.83%; */
+    bottom: 47.15%; 
+    width: inherit;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    height: 30vh;
 }
 .summarysection{
     display: flex;
@@ -58,18 +59,9 @@ letter-spacing: 0.26875rem;
 .summarysection>div{
     margin-top: 4rem;
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .cup img{
         width: 9rem;
-    }
-
-    .stars img{
-        width: 30rem;
-    }
-
-    .cup{
-        top: 30.61%;
-        left: 33.52%;
     }
     .summarysection h1{
         font-size: 2.2875rem;
@@ -81,8 +73,30 @@ letter-spacing: 0.26875rem;
         .summarysection>div{
             margin-top: 4rem;
         }
-        .rulebox{
-           align-items: end;
+
+        .cupsection{
+            background-size: 20rem;
+        }
+    }
+
+ @media (min-width:767px) and (max-width: 1023px) {
+    .summarysection h1{
+        font-size: 3.2875rem;
         }
         
-}
+        .summarysection p{
+            font-size: 1.7625rem;
+        }
+        .summarysection>div{
+            margin-top: rem;
+        }
+
+        .cupsection{
+            background-size: 28rem;
+        }
+
+        .newgame{
+            bottom: 2rem;
+        }
+    }
+

@@ -7,17 +7,17 @@
 body{
     font-family: 'Barlow', sans-serif;
     background:radial-gradient(134.34% 134.34% at 50% 0%,#8CC461 0%,#8CC461 100%);
-    overflow: hidden;
+   
 }
 
 .container{
+    overflow: hidden;
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    overflow: hidden;
     background:radial-gradient(134.34% 134.34% at 50% 0%,#8CC461 0%,#8CC461 100%);
 }
 
@@ -473,7 +473,7 @@ li {
 
 /*Mobile devices*/
 /* Styles for mobile devices */
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .container{
         overflow: visible;
     }
@@ -503,7 +503,7 @@ li {
 .handchoices{
    width: 30rem;
    height: 20rem;
-  
+   margin-top: 2rem;
 }
 .handchoices img{
     width: 9rem;
@@ -542,6 +542,7 @@ li {
   .newgame{
     margin-top: 2%;
      font-size: 0.5375rem;
+     z-index: 2;
   }
   
 /* Adjust the height of the container */
@@ -571,8 +572,111 @@ li {
 
 .rulebox{
     justify-content: center; 
+    margin-right: 0%;
+    
+}
+
 }
 
 
+@media (min-width:767px) and (max-width: 1023px) {
+    
+    .scorebox{
+    width: 80%;
+    height: fit-content;
+    padding: 3%;
+    }
+    .titletext{
+        font-size: 1.5rem;
+    }
+   
+    .score .cscore,.uscore{
+        width: 7rem;
+        height: 6rem;
+       
+    }
+    .score p{   
+        font-size: 0.9rem;
+    }
+    .score h1{
+        font-size: 1.5rem;
+        
+    }
 
+    /* gamesection */
+.handchoices{
+   width: 35rem;
+   height: 25rem;
+   margin-top: 3rem;
+}
+.handchoices img{
+    width: 11rem;
+}
+
+
+/* result page design */
+
+.resultbox{
+
+    margin-top: 4rem;
+    padding: 0%;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .resultbox h1{
+      font-size: 1.5625rem;
+  }
+  
+  .winresultbox
+  {
+      margin: 3%;
+  }
+  
+  .winresultbox h1{
+      font-size: 1.5em;
+      margin-bottom: 0%;
+  }
+  
+  .winresultbox p{
+      font-size: 1rem;
+
+  }
+  
+  .newgame{
+    margin-top: 2rem;
+     font-size: 0.8rem;
+     z-index: 2;
+  }
+  
+/* Adjust the height of the container */
+.pulsecontainer{
+    width: 175px;
+    height: 175px;
+}
+
+.pulsecontainer>img{
+    width: inherit;
+    height: inherit;
+}
+.pulsecontainer1{
+    width: 175px;
+    height: 175px;
+
+}
+.pulsecontainer1>img{
+    width: inherit;
+    height: inherit;
+}
+
+.waitpc>h3{
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.rulebox{
+    margin-right: 2rem;
+    
+}
 }

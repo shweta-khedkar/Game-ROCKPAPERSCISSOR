@@ -3,13 +3,11 @@ const handOptions = {
     "paper": "assets/paperimg.png",
     "scissor": "assets/simage.png"
   }
+
+  /*Timer section*/
   const timerElement = document.getElementById("timer");
-
-let countdown = 0; // Initial countdown time in seconds
-let timerInterval;
-
-
-
+  let countdown = 0; // Initial countdown time in seconds
+  let timerInterval;
 function updateTimer() {
   timerElement.textContent = countdown;
 
@@ -21,9 +19,12 @@ function updateTimer() {
   }
 }
 
+/*initial score*/
+
   let uSCORE = 0;
   let cSCORE=0;
-  let counter=0;
+
+  //play game and display result
   const pickUserHand = (hand) => {
     let hands = document.querySelector(".handchoices");
     hands.style.display = "none";
@@ -98,9 +99,7 @@ function updateTimer() {
     if (userHand == "scissor" && cpHand == "paper") {
       setDecision("YOU WIN");
       increaseScore("uSCORE");
-    }
-    
-    
+    } 
   
 };
   
@@ -119,7 +118,7 @@ function updateTimer() {
     counter.style.visibility="visible";
     counter.style.background="#f8f40c32";
     let texthide=document.querySelector(".waitpc");
-  texthide.style.display="flex";
+    texthide.style.display="flex";
     pulsevisibilityoff();
     pulseoff();
     
@@ -221,7 +220,5 @@ function pulseon(){
 
 function pulseoff(){
   let pulse=document.querySelector(".pulsecontainer>span");
-  // let texthide=document.querySelector(".waitpc");
-  // texthide.style.display="none";
   pulse.style.visibility="hidden";
 }
